@@ -1,2 +1,2 @@
-# ui
-The user interface library
+# RAUI
+The Rete Academy User Interface library
