@@ -5,14 +5,11 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf ./packages/*/dist",
-    "build": "tsc --build",
+    "build": "lerna run build",
     "lint": "eslint . -f codeframe",
     "pretest": "yarn build && yarn lint",
     "test": "yarn test:unit",
     "test:unit": "mocha \"packages/*/dist/test/**/*.spec.js\" --enable-source-maps",
-    "start": "yarn start:client",
-    "start:client": "yarn workspace @sample/app start",
-    "start:server": "yarn workspace @sample/server start",
     "prettify": "npx prettier . --write"
   },
   "repository": {
