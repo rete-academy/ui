@@ -1,5 +1,5 @@
-# UI
-The Rete Academy User Interface library
+# RAUI - Rete Academy User Interface
+
 
 ### Create new component:
 > (should create a script for this later)

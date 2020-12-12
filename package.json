@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "raui",
   "version": "1.0.0",
   "description": "The Rete Academy User Interface library",
   "main": "index.js",
