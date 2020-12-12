@@ -6,7 +6,7 @@ export const Card = (props) => {
         style,
     } = props;
 
-    return <div style={style}>{children}</div>
+    return <div style={{ borderWidth: 1, color: 'red', ...style}}>{children}</div>
 };
 
 export default Card;
