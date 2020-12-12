@@ -3,15 +3,18 @@
   "version": "0.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
-  "author": "Sang Dang <sang.dang@digia.com>",
+  "author": "Sang Dang <sang.dang@rete.academy>",
   "homepage": "https://github.com/rete-academy/ui/tree/master/packages/button#readme",
   "license": "ISC",
-  "main": "lib/button.js",
+  "main": "dist/button.cjs.js",
+  "module": "dist/button.esm.js",
+  "src": "lib/button.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
+    "dist",
     "lib"
   ],
   "publishConfig": {

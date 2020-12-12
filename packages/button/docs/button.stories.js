@@ -4,4 +4,4 @@ import Button from '../lib/button';
 
 export default { title: 'Button' };
 
-export const primary = () => <Button label="Hello" />;
+export const primary = () => <Button label="Button" />;
