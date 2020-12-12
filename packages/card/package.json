@@ -39,6 +39,9 @@
     "react": "17.x"
   },
   "dependencies": {
-    "clsx": "^1.1.1"
+    "autoprefixer": "^10.1.0",
+    "clsx": "^1.1.1",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.2"
   }
 }

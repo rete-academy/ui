@@ -33,5 +33,8 @@
   },
   "devDependencies": {
     "@rete-academy/builder": "^0.0.1"
+  },
+  "dependencies": {
+    "@rete-academy/base": "^0.0.1"
   }
 }

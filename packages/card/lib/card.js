@@ -9,4 +9,4 @@ const Card = (props) => {
     return <div style={{ borderWidth: 1, color: 'red', ...style}}>{children}</div>
 };
 
-export default Card;
+export { Card };

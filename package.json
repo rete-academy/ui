@@ -4,7 +4,7 @@
   "description": "The Rete Academy User Interface library",
   "main": "index.js",
   "scripts": {
-    "install": "lerna bootstrap",
+    "install": "lerna bootstrap --hoist",
     "clean": "rimraf ./packages/*/dist",
     "build": "lerna run build",
     "lint": "eslint . -f codeframe",
@@ -15,7 +15,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy": "npm run build-storybook && gh-pages -d storybook-static",
-    "build-storybook": "build-storybook",
     "publish": "lerna publish"
   },
   "repository": {

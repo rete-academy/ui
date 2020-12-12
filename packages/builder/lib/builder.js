@@ -22,8 +22,8 @@ const inputOptions = {
   plugins: [
     resolve(),
     postcss({
-      // extract: true,
-      modules: true, // Key configuration
+      extract: true,
+      // modules: true, // Key configuration
     }),
     babel({
       presets: ['@babel/preset-env', '@babel/preset-react'],

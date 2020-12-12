@@ -1,7 +1,10 @@
 import React from 'react';
+import { ThemeProvider } from '@rete-academy/base';
+console.log('### ThemeProvider: ', ThemeProvider);
+
+import './styles';
 
 import styles from './button.css';
-console.log('### styles: ', styles);
 
 const Button = (props) => {
     const {
@@ -12,7 +15,7 @@ const Button = (props) => {
 
     return (
         <button
-            className={styles.wrapper}
+            className={`${styles.wrapper} px-8`}
             style={style}
         >
             {label || children}
@@ -20,4 +23,4 @@ const Button = (props) => {
     );
 };
 
-export default Button;
+export { Button };
