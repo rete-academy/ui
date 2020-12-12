@@ -30,5 +30,13 @@
   },
   "bugs": {
     "url": "https://github.com/rete-academy/ui/issues"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.34.2"
   }
 }
