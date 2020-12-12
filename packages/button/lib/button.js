@@ -1,13 +1,23 @@
 import React from 'react';
 
-export const Button = (props) => {
+import styles from './button.css';
+console.log('### styles: ', styles);
+
+const Button = (props) => {
     const {
         children,
         style,
         label,
     } = props;
 
-    return <button style={style}>{label || children}</button>
+    return (
+        <button
+            className={styles.wrapper}
+            style={style}
+        >
+            {label || children}
+        </button>
+    );
 };
 
 export default Button;

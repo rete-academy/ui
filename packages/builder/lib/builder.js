@@ -3,6 +3,7 @@ const rollup = require('rollup');
 const path = require('path');
 const resolve = require('@rollup/plugin-node-resolve').default;
 const babel = require('@rollup/plugin-babel').default;
+const postcss = require('rollup-plugin-postcss');
 
 const currentWorkingPath = process.cwd();
 const { main, name } = require(path.join(currentWorkingPath, 'package.json'));
@@ -16,11 +17,16 @@ const fileName = name.replace('@rete-academy/', '');
 const inputOptions = {
   input: inputPath,
   external: ['react'],
+  // preserveSymlinks: true,
   plugins: [
     resolve(),
     babel({
       presets: ['@babel/preset-env', '@babel/preset-react'],
       babelHelpers: 'bundled',
+    }),
+    postcss({
+      // extract: true,
+      modules: true, // Key configuration
     }),
   ],
 };

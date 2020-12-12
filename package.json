@@ -4,7 +4,7 @@
   "description": "The Rete Academy User Interface library",
   "main": "index.js",
   "scripts": {
-    "install": "lerna bootstrap --force-local --hoist",
+    "install": "lerna bootstrap",
     "clean": "rimraf ./packages/*/dist",
     "build": "lerna run build",
     "lint": "eslint . -f codeframe",

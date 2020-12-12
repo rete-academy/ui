@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Card = (props) => {
+const Card = (props) => {
     const {
         children,
         style,
