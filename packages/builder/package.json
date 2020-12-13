@@ -25,7 +25,6 @@
     "rete-builder": "./lib/builder.js"
   },
   "scripts": {
-    "rete-build": "./bin/rete-builder",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {

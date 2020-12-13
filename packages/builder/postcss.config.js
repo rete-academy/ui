@@ -1,13 +1,16 @@
-// We need this config for storybook. I have no fucking idea why...
-
 // const production = !process.env.ROLLUP_WATCH;
 // const purgecss = require("@fullhuman/postcss-purgecss");
+const path = require('path');
+
+const currentWorkingPath = process.cwd();
+const tmp = currentWorkingPath.split(path.sep).splice(-2);
+console.log('### tmp: ', tmp.join(path.sep));
 
 module.exports = {
   plugins: [
     // require("postcss-preset-env"),
     require("postcss-import"),
-    require("tailwindcss"),
+    require("tailwindcss")("./package.json"),
     require("autoprefixer"),
     // Only purge css on production
     // production &&

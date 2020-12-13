@@ -6,6 +6,7 @@
   "scripts": {
     "install": "lerna bootstrap --hoist",
     "clean": "lerna clean --yes && rimraf ./packages/*/dist",
+    "reset": "npm run clean && npm run install",
     "build": "lerna run build",
     "lint": "eslint . -f codeframe",
     "pretest": "yarn build && yarn lint",
@@ -14,7 +15,7 @@
     "prettify": "npx prettier . --write",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
-    "build:tailwind": "postcss src/scss/base.scss -o src/scss/tailwind.scss",
+    "build:tailwind": "tailwind build packages/button/lib/styles.css -o packages/tailwind.css",
     "deploy": "npm run build:storybook && gh-pages -d storybook-static",
     "publish": "lerna publish"
   },

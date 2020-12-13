@@ -16,10 +16,10 @@ module.exports = {
         'style-loader',
         {
           loader: 'css-loader',
-          options: {
-            // Key config
-            // modules: true,
-          },
+          // options: {
+          //   // Key config
+          //   // modules: true,
+          // },
         },
         'postcss-loader',
       ],

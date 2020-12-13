@@ -18,21 +18,21 @@ const fileName = name.replace('@rete-academy/', '');
 const inputOptions = {
     input: inputPath,
     external: ['react'],
-    // preserveSymlinks: true,
     plugins: [
-        resolve(),
         postcss({
             extract: true,
             config: {
-                path: "../../../postcss.config.js",
+                path: "./postcss.config.js",
             },
-            // modules: true, // Key configuration
+            extensions: ['.css'],
+            modules: true, // Key configuration
         }),
         babel({
             presets: ['@babel/preset-env', '@babel/preset-react'],
             babelHelpers: 'bundled',
             exclude: 'node_modules/**',
         }),
+        resolve(),
     ],
 };
 
