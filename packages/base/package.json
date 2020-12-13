@@ -1,6 +1,6 @@
 {
   "name": "@rete-academy/base",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Base component for provider and base styling",
   "keywords": [],
   "author": "Sang Dang <sangdth@gmail.com>",
@@ -32,7 +32,7 @@
     "url": "https://github.com/rete-academy/ui/issues"
   },
   "devDependencies": {
-    "@rete-academy/builder": "^0.0.3",
+    "@rete-academy/builder": "^0.0.4",
     "react": "^17.0.1"
   },
   "peerDependencies": {
