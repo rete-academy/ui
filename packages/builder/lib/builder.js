@@ -24,7 +24,7 @@ const inputOptions = {
         postcss({
             extract: true,
             config: {
-                path: "../postcss.config.js",
+                path: "../../../postcss.config.js",
             },
             // modules: true, // Key configuration
         }),

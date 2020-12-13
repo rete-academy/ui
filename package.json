@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install": "lerna bootstrap --hoist",
-    "clean": "rimraf ./packages/*/dist",
+    "clean": "lerna clean --yes && rimraf ./packages/*/dist",
     "build": "lerna run build",
     "lint": "eslint . -f codeframe",
     "pretest": "yarn build && yarn lint",
