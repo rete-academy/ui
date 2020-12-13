@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     // require("postcss-preset-env"),
     // require("postcss-import"),
-    require("tailwindcss"),
+    require("tailwindcss")("./tailwind.config.js"),
     require("autoprefixer"),
     // Only purge css on production
     // production &&

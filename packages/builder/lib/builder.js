@@ -16,21 +16,24 @@ const fileName = name.replace('@rete-academy/', '');
 
 // see below for details on the options
 const inputOptions = {
-  input: inputPath,
-  external: ['react'],
-  // preserveSymlinks: true,
-  plugins: [
-    resolve(),
-    postcss({
-      extract: true,
-      // modules: true, // Key configuration
-    }),
-    babel({
-      presets: ['@babel/preset-env', '@babel/preset-react'],
-      babelHelpers: 'bundled',
-      exclude: 'node_modules/**',
-    }),
-  ],
+    input: inputPath,
+    external: ['react'],
+    // preserveSymlinks: true,
+    plugins: [
+        resolve(),
+        postcss({
+            extract: true,
+            config: {
+                path: "../postcss.config.js",
+            },
+            // modules: true, // Key configuration
+        }),
+        babel({
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            babelHelpers: 'bundled',
+            exclude: 'node_modules/**',
+        }),
+    ],
 };
 
 const outputOptions = [

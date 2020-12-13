@@ -18,9 +18,10 @@ module.exports = {
           loader: 'css-loader',
           options: {
             // Key config
-            modules: true,
+            // modules: true,
           },
         },
+        'postcss-loader',
       ],
     });
 
