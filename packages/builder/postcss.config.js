@@ -4,6 +4,7 @@ const path = require('path');
 // const path = require('path');
 
 const configPath = path.resolve(__dirname, "../builder/tailwind.config.js");
+console.log('### TaiwindCSS configPath: ', configPath);
 
 module.exports = {
   plugins: [

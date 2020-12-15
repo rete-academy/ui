@@ -9,6 +9,9 @@ const postcss = require('rollup-plugin-postcss');
 const currentWorkingPath = process.cwd();
 const { src, name } = require(path.join(currentWorkingPath, 'package.json'));
 
+const configPath = path.resolve(__dirname, "../postcss.config.js");
+console.log('### PostCSS configPath: ', configPath);
+
 const inputPath = path.join(currentWorkingPath, src);
 
 // Little workaround to get package name without scope
@@ -22,7 +25,7 @@ const inputOptions = {
         postcss({
             extract: true,
             config: {
-                path: "../postcss.config.js",
+                path: configPath,
             },
             extensions: ['.css'],
             modules: true, // Key configuration
