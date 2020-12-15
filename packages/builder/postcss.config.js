@@ -1,15 +1,15 @@
+const path = require('path');
 // const production = !process.env.ROLLUP_WATCH;
 // const purgecss = require("@fullhuman/postcss-purgecss");
 // const path = require('path');
-// Tai sao khi run npm run build, no khong su dung config nay
-// ma lai su dung config o root?
-console.log('postcss.config.js at builder');
+
+const configPath = path.resolve(__dirname, "../builder/tailwind.config.js");
 
 module.exports = {
   plugins: [
     // require("postcss-preset-env"),
     require("postcss-import"),
-    require("tailwindcss")("./tailwind.config.js"),
+    require("tailwindcss")(configPath),
     require("autoprefixer"),
     // Only purge css on production
     // production &&
