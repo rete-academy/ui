@@ -1,7 +1,7 @@
 {
   "name": "@rete-academy/ui",
   "version": "0.0.5",
-  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "description": "Rete Academy UI pack",
   "keywords": [],
   "author": "Sang Dang <sang.dang@rete.academy>",
   "homepage": "https://github.com/rete-academy/ui/tree/master/packages/ui#readme",
@@ -35,6 +35,8 @@
     "@rete-academy/builder": "^0.0.5"
   },
   "dependencies": {
-    "@rete-academy/base": "^0.0.5"
+    "@rete-academy/base": "^0.0.5",
+    "@rete-academy/button": "^0.0.5",
+    "@rete-academy/card": "^0.0.5"
   }
 }
