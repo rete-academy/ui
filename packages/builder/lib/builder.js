@@ -21,16 +21,17 @@ const inputOptions = {
     input: inputPath,
     external: ['react'],
     plugins: [
-        // styles(),
         postcss({
             extensions: ['.css'],
             minimize: true,
-            extract: path.resolve('dist/styles.css'),
+            extract: false,
+            // extract: path.resolve('dist/styles.css'),
             // modules: true, // Key configuration
             config: {
                 path: configPath,
             },
         }),
+        styles(),
         babel({
             presets: ['@babel/preset-env', '@babel/preset-react'],
             babelHelpers: 'bundled',
