@@ -5,7 +5,7 @@ const path = require('path');
 const resolve = require('@rollup/plugin-node-resolve').default;
 const babel = require('@rollup/plugin-babel').default;
 const postcss = require('rollup-plugin-postcss');
-const styles = require('rollup-plugin-styles');
+// const styles = require('rollup-plugin-styles');
 
 const currentWorkingPath = process.cwd();
 const { src, name } = require(path.join(currentWorkingPath, 'package.json'));
@@ -24,14 +24,13 @@ const inputOptions = {
         postcss({
             extensions: ['.css'],
             minimize: true,
-            extract: false,
-            // extract: path.resolve('dist/styles.css'),
+            extract: path.resolve('dist/styles.css'),
             // modules: true, // Key configuration
             config: {
                 path: configPath,
             },
         }),
-        styles(),
+        // styles(), // it's injected but still not show css, why?
         babel({
             presets: ['@babel/preset-env', '@babel/preset-react'],
             babelHelpers: 'bundled',
