@@ -4,14 +4,12 @@ const rollup = require('rollup');
 const path = require('path');
 const resolve = require('@rollup/plugin-node-resolve').default;
 const babel = require('@rollup/plugin-babel').default;
-const postcss = require('rollup-plugin-postcss');
-// const styles = require('rollup-plugin-styles');
+const typescript = require('@rollup/plugin-typescript');
 
 const currentWorkingPath = process.cwd();
 const { src, name } = require(path.join(currentWorkingPath, 'package.json'));
 
 const inputPath = path.join(currentWorkingPath, src); // get the current working dir (button, card, etc)
-const configPath = path.resolve(__dirname, "../postcss.config.js"); // get the builder directory
 
 // Little workaround to get package name without scope
 const fileName = name.replace('@rete-academy/', '');
@@ -21,16 +19,7 @@ const inputOptions = {
     input: inputPath,
     external: ['react'],
     plugins: [
-        postcss({
-            extensions: ['.css'],
-            minimize: true,
-            extract: path.resolve('dist/styles.css'),
-            // modules: true, // Key configuration
-            config: {
-                path: configPath,
-            },
-        }),
-        // styles(), // it's injected but still not show css, why?
+        typescript(),
         babel({
             presets: ['@babel/preset-env', '@babel/preset-react'],
             babelHelpers: 'bundled',

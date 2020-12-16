@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "typeRoots": ["node_modules/@types", "packages/types"],
-    "baseUrl": ".",
-    "paths": {
-      "@doc-utils": ["packages/doc-utils"]
-    }
-  }
-}

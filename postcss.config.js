@@ -1,14 +1,14 @@
 const path = require('path');
 // const purgecss = require("@fullhuman/postcss-purgecss");
 
-const configPath = path.resolve(__dirname, "../builder/tailwind.config.js");
+// const configPath = path.resolve(__dirname, "../builder/tailwind.config.js");
 
 module.exports = {
   plugins: [
     // require("postcss-preset-env"),
-    require("postcss-import"),
-    require("tailwindcss")(configPath),
-    require("autoprefixer"),
+    require('postcss-import'),
+    require('tailwindcss')('./tailwind.config.js'),
+    require('autoprefixer')(),
 
     // purgecss({ // use purgecss broke storybook, whyyyy?
     //     content: ["./**/*.html"],

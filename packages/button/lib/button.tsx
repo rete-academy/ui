@@ -1,9 +1,6 @@
 import React from 'react';
-// import { ThemeProvider } from '@rete-academy/base'; // can see
 
-import './styles.css';
-
-const Button = (props) => {
+const Button = (props: any) => {
     const {
         children,
         style,
@@ -20,4 +17,4 @@ const Button = (props) => {
     );
 };
 
-export { Button };
+export default Button;

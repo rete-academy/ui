@@ -1,6 +1,6 @@
 {
-  "extends": "./tsconfig-extends.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "allowJs": true,
     "checkJs": false,
@@ -24,9 +24,10 @@
     ]
   },
   "include": [
-    "packages"
+    "**/*.ts",
+    "**/*.tsx",
   ],
   "exclude": [
-    "public/version"
+      "node_modules"
   ]
 }

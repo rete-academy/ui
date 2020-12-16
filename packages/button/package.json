@@ -8,7 +8,7 @@
   "license": "ISC",
   "main": "dist/button.cjs.js",
   "module": "dist/button.esm.js",
-  "src": "lib/button.js",
+  "src": "lib/index.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -33,7 +33,8 @@
   },
   "devDependencies": {
     "@rete-academy/builder": "^0.0.6",
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "typescript": "^4.1.3"
   },
   "peerDependencies": {
     "react": "17.x"

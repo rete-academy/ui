@@ -1,5 +1,6 @@
 const path = require('path');
-const configPath = path.resolve(__dirname, "../packages/builder/postcss.config.js");
+
+// const configPath = path.resolve(__dirname, "../packages/builder/postcss.config.js");
 
 module.exports = {
     "stories": ["../packages/**/*.stories.@(js|jsx|ts|tsx)"],
@@ -8,6 +9,15 @@ module.exports = {
         "@storybook/addon-links",
         "@storybook/addon-essentials"
     ],
+    // typescript: {
+    //     check: false,
+    //     checkOptions: {},
+    //     reactDocgen: 'react-docgen-typescript',
+    //     reactDocgenTypescriptOptions: {
+    //         shouldExtractLiteralValuesFromEnum: true,
+    //         propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
+    //     },
+    // },
     webpackFinal: async (config) => {
         // remove default css rule from storybook
         config.module.rules = config.module.rules.filter((f) => f.test.toString() !== '/\\.css$/');
@@ -28,7 +38,7 @@ module.exports = {
                     loader: 'postcss-loader',
                     options: {
                         postcssOptions: {
-                            config: configPath,
+                            // config: configPath,
                         },
                     },
                 },
