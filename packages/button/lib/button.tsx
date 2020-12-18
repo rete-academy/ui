@@ -9,7 +9,8 @@ const Button = (props: any) => {
 
     return (
         <button
-            className={`px-10 py-4 bg-purple-600 text-white rounded-2xl`}
+            type="button"
+            className="px-10 py-4 bg-purple-600 text-white rounded-2xl"
             style={style}
         >
             {label || children}

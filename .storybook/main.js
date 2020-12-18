@@ -37,7 +37,7 @@ module.exports = {
                 {
                     loader: 'postcss-loader',
                     options: {
-                        postcssOptions: {
+                        postcssOptions: { // TODO: Purge the unused css from Tailwind.
                             // config: configPath,
                         },
                     },

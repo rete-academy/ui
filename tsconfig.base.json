@@ -6,6 +6,7 @@
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
+    "allowJs": true,
     "jsx": "react",
     "lib": ["dom", "esnext"],
     "paths": {

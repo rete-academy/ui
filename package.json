@@ -15,8 +15,7 @@
     "prettify": "npx prettier . --write",
     "storybook": "start-storybook -p 9090",
     "build:storybook": "build-storybook",
-    "build:tailwind": "tailwind build packages/button/lib/styles.css -o packages/tailwind.css",
-    "deploy": "npm run build:storybook && gh-pages -d storybook-static",
+    "publish:storybook": "npm run build:storybook && gh-pages -d storybook-static",
     "publish": "lerna publish"
   },
   "repository": {
@@ -38,7 +37,7 @@
     "autoprefixer": "^10.1.0",
     "babel-loader": "^8.2.2",
     "eslint": "^7.15.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^3.1.0",
