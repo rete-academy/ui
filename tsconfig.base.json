@@ -1,0 +1,15 @@
+{
+  "include": ["packages/*/lib"],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["dom", "esnext"],
+    "paths": {
+      "@rete-academy/*": ["packages/*/lib"]
+    }
+  }
+}

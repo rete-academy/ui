@@ -13,7 +13,7 @@
     "test": "yarn test:unit",
     "test:unit": "mocha \"packages/*/dist/test/**/*.spec.js\" --enable-source-maps",
     "prettify": "npx prettier . --write",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 9090",
     "build:storybook": "build-storybook",
     "build:tailwind": "tailwind build packages/button/lib/styles.css -o packages/tailwind.css",
     "deploy": "npm run build:storybook && gh-pages -d storybook-static",

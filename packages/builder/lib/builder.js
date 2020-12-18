@@ -30,14 +30,16 @@ const inputOptions = {
 };
 
 const outputOptions = [
-  {
-    file: `dist/${fileName}.cjs.js`,
-    format: 'cjs',
-  },
-  {
-    file: `dist/${fileName}.esm.js`,
-    format: 'esm',
-  },
+    {
+        file: `dist/${fileName}.cjs.js`,
+        format: 'cjs',
+        exports: 'named',
+    },
+    {
+        file: `dist/${fileName}.esm.js`,
+        format: 'esm',
+        exports: 'named',
+    },
 ];
 
 async function build() {

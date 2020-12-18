@@ -1,13 +1,11 @@
 {
-  "packages": [
-    "packages/**"
-  ],
-  "version": "0.0.6",
-  "hoist": true,
-  "stream": true,
-  "bootstrap": {
-    "npmClientArgs": [
-      "--no-package-lock"
-    ]
-  }
+    "packages": [
+        "packages/**"
+    ],
+    "version": "0.0.6",
+    "hoist": true,
+    "stream": true,
+    "bootstrap": {
+        "npmClientArgs": ["--no-package-lock"]
+    }
 }
