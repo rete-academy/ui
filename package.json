@@ -7,7 +7,8 @@
     "install": "lerna bootstrap --hoist",
     "clean": "lerna clean --yes && rimraf ./packages/*/dist",
     "reset": "npm run clean && npm run install",
-    "build": "lerna run build",
+    "build:typescript": "tsc --project tsconfig.base.json",
+    "build": "npm run build:typescript && lerna run build",
     "lint": "eslint . -f codeframe",
     "pretest": "yarn build && yarn lint",
     "test": "yarn test:unit",
@@ -34,7 +35,6 @@
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
     "@storybook/react": "^6.1.11",
-    "autoprefixer": "^10.1.0",
     "babel-loader": "^8.2.2",
     "eslint": "^7.15.0",
     "eslint-plugin-import": "^2.22.0",
@@ -43,12 +43,14 @@
     "gh-pages": "^3.1.0",
     "lerna": "^3.22.1",
     "postcss": "^8.2.1",
-    "postcss-import": "^13.0.0",
     "postcss-loader": "^4.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "tailwindcss": "^2.0.2",
     "vite": "^1.0.0-rc.13"
   },
-  "dependencies": {}
+  "dependencies": {
+    "postcss-import": "^13.0.0",
+    "tailwindcss": "^2.0.2",
+    "autoprefixer": "^10.1.0"
+  }
 }

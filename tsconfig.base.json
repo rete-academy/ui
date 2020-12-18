@@ -1,5 +1,8 @@
 {
-  "include": ["packages/*/lib"],
+  "include": [
+    "packages/**/*.ts",
+    "packages/**/*.tsx"
+  ],
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
