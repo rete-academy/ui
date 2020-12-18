@@ -3,10 +3,7 @@
         "packages/**/*.ts",
         "packages/**/*.tsx"
     ],
-    "exclude": [
-        "docs",
-        "node_modules"
-    ],
+    "exclude": ["node_modules"],
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",

@@ -3,6 +3,7 @@
   "include": [
       "packages/**/*.ts",
       "packages/**/*.tsx",
+      ".storybook/*",
       "**/builder.js",
       ".eslintrc.js",
       "*.config.js",
