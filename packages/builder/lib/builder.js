@@ -5,6 +5,7 @@ const path = require('path');
 const resolve = require('@rollup/plugin-node-resolve').default;
 const babel = require('@rollup/plugin-babel').default;
 const typescript = require('@rollup/plugin-typescript');
+const commonjs = require('@rollup/plugin-commonjs');
 
 const cwd = process.cwd();
 
@@ -31,6 +32,7 @@ const inputOptions = {
             exclude: 'node_modules/**',
         }),
         resolve(),
+        commonjs(),
     ],
 };
 
