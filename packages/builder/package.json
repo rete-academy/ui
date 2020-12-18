@@ -6,7 +6,6 @@
   "author": "Sang Dang <sang.dang@digia.com>",
   "homepage": "https://github.com/rete-academy/ui/tree/master/packages/builder#readme",
   "license": "ISC",
-  "type": "module",
   "main": "lib/builder.js",
   "directories": {
     "lib": "lib",

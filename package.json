@@ -8,7 +8,7 @@
     "clean": "lerna clean --yes && rimraf ./packages/*/dist",
     "reset": "npm run clean && npm run install",
     "build:typescript": "tsc --project tsconfig.base.json",
-    "build": "npm run build:typescript && lerna run build",
+    "build": "lerna run build",
     "lint": "eslint . -f codeframe",
     "pretest": "yarn build && yarn lint",
     "test": "yarn test:unit",
