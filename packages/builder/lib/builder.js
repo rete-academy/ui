@@ -32,7 +32,9 @@ const inputOptions = {
             exclude: 'node_modules/**',
         }),
         resolve(),
-        commonjs(),
+        commonjs({
+            // include: '/node_modules/**',
+        }),
     ],
 };
 

@@ -34,6 +34,12 @@
   "devDependencies": {
     "@rete-academy/builder": "^0.0.8"
   },
+  "peerDependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "react": "^17.0.1",
+    "tailwindcss": "^2.0.2"
+  },
   "dependencies": {
     "@rete-academy/base": "^0.0.8",
     "@rete-academy/button": "^0.0.8",

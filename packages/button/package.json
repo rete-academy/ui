@@ -6,6 +6,7 @@
   "author": "Sang Dang <sang.dang@rete.academy>",
   "homepage": "https://github.com/rete-academy/ui/tree/master/packages/button#readme",
   "license": "ISC",
+  "type": "module",
   "main": "dist/button.cjs.js",
   "module": "dist/button.esm.js",
   "src": "lib/button.tsx",
@@ -38,7 +39,7 @@
   "peerDependencies": {
     "autoprefixer": "^10.1.0",
     "postcss": "^8.2.1",
-    "react": "17.x",
+    "react": "^17.0.1",
     "tailwindcss": "^2.0.2"
   },
   "dependencies": {

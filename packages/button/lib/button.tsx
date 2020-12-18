@@ -10,7 +10,7 @@ const Button = (props: any) => {
     return (
         <button
             type="button"
-            className="px-10 py-4 bg-purple-600 text-white rounded-2xl"
+            className="px-10 py-4 bg-blue-600 text-white rounded-2xl"
             style={style}
         >
             {label || children}
