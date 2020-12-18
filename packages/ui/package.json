@@ -1,6 +1,6 @@
 {
   "name": "@rete-academy/ui",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Rete Academy UI pack",
   "keywords": [],
   "author": "Sang Dang <sang.dang@rete.academy>",
@@ -32,11 +32,11 @@
     "url": "https://github.com/rete-academy/ui/issues"
   },
   "devDependencies": {
-    "@rete-academy/builder": "^0.0.6"
+    "@rete-academy/builder": "^0.0.7"
   },
   "dependencies": {
-    "@rete-academy/base": "^0.0.6",
-    "@rete-academy/button": "^0.0.6",
-    "@rete-academy/card": "^0.0.6"
+    "@rete-academy/base": "^0.0.7",
+    "@rete-academy/button": "^0.0.7",
+    "@rete-academy/card": "^0.0.7"
   }
 }
