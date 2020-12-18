@@ -6,13 +6,13 @@ const resolve = require('@rollup/plugin-node-resolve').default;
 const babel = require('@rollup/plugin-babel').default;
 const typescript = require('@rollup/plugin-typescript');
 
-const currentWorkingPath = process.cwd();
+const cwd = process.cwd();
 
 /* eslint-disable-next-line */ // TODO: Fix the next require
-const {src, name: pkgName} = require(path.join(currentWorkingPath, 'package.json'));
+const {src, name: pkgName} = require(path.join(cwd, 'package.json'));
 
 // get the current working dir (button, card, etc)
-const inputPath = path.join(currentWorkingPath, src);
+const inputPath = path.join(cwd, src);
 
 // Little workaround to get package name without scope
 const fileName = pkgName.replace('@rete-academy/', '');
@@ -23,8 +23,7 @@ const inputOptions = {
     external: ['react'],
     plugins: [
         typescript({
-            // tsconfig: path.join(currentWorkingPath, 'tsconfig.json'),
-            tsconfig: './tsconfig.json',
+            tsconfig: path.join(cwd, 'tsconfig.local.json'),
         }),
         babel({
             presets: ['@babel/preset-env', '@babel/preset-react'],

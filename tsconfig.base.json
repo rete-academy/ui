@@ -1,20 +1,23 @@
 {
-  "include": [
-    "packages/**/*.ts",
-    "packages/**/*.tsx"
-  ],
-  "exclude": ["node_modules", "docs"],
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "declaration": true,
-    "declarationMap": true,
-    "esModuleInterop": true,
-    "allowJs": true,
-    "jsx": "react",
-    "lib": ["dom", "esnext"],
-    "paths": {
-      "@rete-academy/*": ["packages/*/lib"]
+    "include": [
+        "packages/**/*.ts",
+        "packages/**/*.tsx"
+    ],
+    "exclude": [
+        "docs",
+        "node_modules"
+    ],
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "declaration": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "jsx": "react",
+        "lib": ["dom", "esnext"],
+        "paths": {
+            "@rete-academy/*": ["packages/*/lib"]
+        }
     }
-  }
 }
