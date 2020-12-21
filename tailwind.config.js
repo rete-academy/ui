@@ -1,4 +1,5 @@
-// const colors = require('tailwindcss/colors')
+// const colors = require('tailwindcss/colors');
+// console.log('### colors: ', colors);
 
 module.exports = {
     theme: {
