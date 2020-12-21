@@ -1,6 +1,6 @@
 {
   "name": "@rete-academy/button",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "description": "RAUI Button component",
   "keywords": [],
   "author": "Sang Dang <sang.dang@rete.academy>",
@@ -33,7 +33,7 @@
     "url": "https://github.com/rete-academy/ui/issues"
   },
   "devDependencies": {
-    "@rete-academy/builder": "^0.0.10",
+    "@rete-academy/builder": "^0.1.0",
     "react": "^17.0.1"
   },
   "peerDependencies": {
