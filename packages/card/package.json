@@ -1,6 +1,6 @@
 {
   "name": "@rete-academy/card",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Card module for UI",
   "keywords": [],
   "author": "Sang Dang <sang.dang@rete.academy>",
@@ -33,7 +33,7 @@
     "url": "https://github.com/rete-academy/ui/issues"
   },
   "devDependencies": {
-    "@rete-academy/builder": "^0.0.9",
+    "@rete-academy/builder": "^0.0.10",
     "react": "^17.0.1"
   },
   "peerDependencies": {
