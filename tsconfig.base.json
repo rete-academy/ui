@@ -5,13 +5,16 @@
     ],
     "exclude": ["node_modules"],
     "compilerOptions": {
+        "allowJs": true,
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
+        "checkJs": false,
         "declaration": true,
         "declarationMap": true,
         "esModuleInterop": true,
-        "allowJs": true,
         "jsx": "react",
-        "lib": ["dom", "esnext"]
+        "lib": ["dom", "esnext"],
+        "module": "esnext",
+        "preserveSymlinks": true
     }
 }

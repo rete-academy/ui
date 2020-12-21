@@ -18,5 +18,4 @@ const Button = (props: any) => {
     );
 };
 
-export {Button};
 export default Button;

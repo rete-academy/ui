@@ -16,7 +16,7 @@ const {src, name: pkgName} = require(path.join(cwd, 'package.json'));
 const inputPath = path.join(cwd, src);
 
 // Little workaround to get package name without scope
-const fileName = pkgName.replace('@rete-academy/', '');
+// const fileName = pkgName.replace('@rete-academy/', '');
 
 // see below for details on the options
 const inputOptions = {
@@ -33,19 +33,20 @@ const inputOptions = {
         }),
         resolve(),
         commonjs({
-            // include: '/node_modules/**',
+            transformMixedEsModules: true,
+            include: 'node_modules/**',
         }),
     ],
 };
 
 const outputOptions = [
     {
-        file: `dist/${fileName}.cjs.js`,
+        file: 'dist/index.cjs.js',
         format: 'cjs',
         exports: 'named',
     },
     {
-        file: `dist/${fileName}.esm.js`,
+        file: 'dist/index.esm.js',
         format: 'esm',
         exports: 'named',
     },

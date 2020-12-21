@@ -13,8 +13,8 @@
     "test": "npm run test:unit",
     "test:unit": "mocha \"packages/*/dist/test/**/*.spec.js\" --enable-source-maps",
     "prettify": "npx prettier . --write",
-    "sb": "start-storybook -p 9090",
-    "publish:sb": "build-storybook && gh-pages -d storybook-static",
+    "storybook": "start-storybook -p 9090",
+    "publish:storybook": "build-storybook && gh-pages -d storybook-static",
     "publish": "lerna publish"
   },
   "repository": {

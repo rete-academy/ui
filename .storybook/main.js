@@ -9,15 +9,6 @@ module.exports = {
         "@storybook/addon-links",
         "@storybook/addon-essentials"
     ],
-    // typescript: {
-    //     check: false,
-    //     checkOptions: {},
-    //     reactDocgen: 'react-docgen-typescript',
-    //     reactDocgenTypescriptOptions: {
-    //         shouldExtractLiteralValuesFromEnum: true,
-    //         propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
-    //     },
-    // },
     webpackFinal: async (config) => {
         // remove default css rule from storybook
         config.module.rules = config.module.rules.filter((f) => f.test.toString() !== '/\\.css$/');

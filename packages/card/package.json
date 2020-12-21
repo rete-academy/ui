@@ -1,14 +1,15 @@
 {
   "name": "@rete-academy/card",
   "version": "0.0.9",
-  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "description": "Card module for UI",
   "keywords": [],
   "author": "Sang Dang <sang.dang@rete.academy>",
   "homepage": "https://github.com/rete-academy/ui/tree/master/packages/card#readme",
   "license": "ISC",
-  "main": "dist/card.cjs.js",
-  "module": "dist/card.esm.js",
-  "src": "lib/card.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "src": "lib/index.ts",
+  "types": "dist/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

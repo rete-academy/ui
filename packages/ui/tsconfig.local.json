@@ -3,11 +3,6 @@
     "include": ["lib/**/*"],
     "exclude": ["node_modules", "docs"],
     "compilerOptions": {
-        "rootDir": "lib",
-        "declarationDir": "./types",
-        "outDir": "./dist",
-        "paths": {
-            "@rete-academy/*": ["../../packages/*"]
-        }
+        "declarationDir": "."
     }
 }

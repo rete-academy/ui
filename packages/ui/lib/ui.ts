@@ -1,2 +1,2 @@
-export { Button } from '@rete-academy/button';
-export { Card } from '@rete-academy/card';
+export { default as Button } from '@rete-academy/button';
+export { default as Card } from '@rete-academy/card';

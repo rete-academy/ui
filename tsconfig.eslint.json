@@ -4,7 +4,7 @@
       "packages/**/*.ts",
       "packages/**/*.tsx",
       ".storybook/*",
-      "**/builder.js",
+      "**/*/builder.js",
       ".eslintrc.js",
       "*.config.js",
       "test/**/*.ts"
